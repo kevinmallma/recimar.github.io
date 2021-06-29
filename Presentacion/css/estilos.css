@@ -1,0 +1,213 @@
+/* 
+    Created on : 8 mar. 2021, 10:17:02
+    Author     : MALLMA
+*/
+
+
+/** utilidades **/
+
+a {
+    text-decoration: none!important;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/** login **/
+
+.fondo {
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.alto {
+    height: 100vh;
+}
+
+.form {
+    background: rgba(255, 255, 255, .9);
+}
+
+
+/** menu **/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 0;
+    /* Height of navbar */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) !important;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    /* altura del navbar */
+    height: 100vh;
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+@media (max-width:991px) {
+    .sidebar {
+        top: 0;
+    }
+    .bajar-menu {
+        margin-top: 3rem;
+    }
+    .bajar-cuerpo {
+        margin-top: 4rem;
+    }
+}
+
+.login {
+    background-color: rgba(0, 255, 0, .1);
+}
+
+.p-login {
+    font-size: 1rem;
+    margin-bottom: 0.7rem!important;
+}
+
+.barras-seleccion,
+.barras-salir {
+    font-size: 1.1rem;
+}
+
+
+/* quita el sombreado azul */
+
+.barras-seleccion:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.barras-seleccion:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.fa-chevron-down {
+    transition: transform ease-in-out .3s;
+}
+
+.collapsed .fa-chevron-down {
+    transform: rotate(90deg);
+}
+
+.list-group .bg-dark:hover {
+    background-color: rgba(255, 255, 255, .2)!important;
+}
+
+.list-group .text-light:hover {
+    color: #ffffff!important;
+}
+
+.barras-salir:hover,
+.barras-salir:focus {
+    color: #000000!important;
+    background-color: #ffc107;
+}
+
+.activo-menu {
+    background-color: #007bff;
+}
+
+.activo-li {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+/** contenido **/
+
+.contenido {
+    border-top-width: 0.3rem!important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .125), 0 .1rem .3rem rgba(0, 0, 0, .2);
+}
+
+.dataTables_wrapper {
+    font-size: .9rem;
+}
+
+
+/* diseño del la cruz para colapzar*/
+
+.dtr-control:before {
+    margin-top: 0px !important;
+}
+
+#carga {
+    z-index: 3000;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* DISEÑO DE LA TABLA DEL GRAFICO */
+
+#container,
+#container_barra,
+#container_pie {
+    height: 36rem;
+}
+
+.highcharts-table-caption {
+    display: none;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.dataTables_paginate .pagination .disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "recicladora/php-7.49",
+    "autoload": {
+        "psr-4": {
+            "Dao\\": "Dao/",
+            "Entidades\\": "Entidades/",
+            "LogicaNegocio\\": "LogicaNegocio/"
+        }
+    },
+    "require": {
+        "monolog/monolog": "^2.2",
+        "mike42/escpos-php": "^3.0",
+        "mpdf/mpdf": "^8.0"
+    }
+}

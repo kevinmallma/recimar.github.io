@@ -1,0 +1,3 @@
+Options +Indexes
+php_value date.timezone 'America/Lima'
+ErrorDocument 404 http://localhost:85/recimar_v2/Presentacion/404.html
